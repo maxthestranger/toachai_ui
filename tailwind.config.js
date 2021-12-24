@@ -1,0 +1,76 @@
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        dark: '#222222',
+        grey: '#777777',
+        primary: '#2fc56d',
+      },
+      screens: {
+        'x-xss': { max: '374px' },
+        xss: { max: '480px' },
+        xs: { max: '700px' },
+        md: { max: '1024px' },
+        lg: { max: '1200px' },
+      },
+      fontSize: {
+        64: '64px',
+        30: '30px',
+        22: '22px',
+        18: '18px',
+        16: '16px',
+        12: '12px',
+        14: '14px',
+      },
+      lineHeight: {
+        80: '80px',
+        44: '44px',
+        30: '30px',
+      },
+      width: {
+        1128: '1128px',
+        800: '800px',
+        600: '600px',
+      },
+      borderRadius: {
+        40: '40px',
+      },
+      fontFamily: {
+        'cr-medium': "'Circular Medium'",
+        'cr-regular': "'Circular Regular'",
+        'cr-book': "'Circular Book'",
+        'cr-bold': "'Circular Bold'",
+        'cr-black': "'Circular Black'",
+      },
+      zIndex: {
+        1: '1',
+      },
+      spacing: {
+        192: '192px',
+        120: '120px',
+        36: '36px',
+        24: '24px',
+        16: '16px',
+        14: '14px',
+        12: '12px',
+        11: '11px',
+        10: '10px',
+        9: '9px',
+        8: '8px',
+        7: '7px',
+        6: '6px',
+        5: '5px',
+        4: '4px',
+        3: '3px',
+        2: '2px',
+        1: '1px',
+        0: '0',
+      },
+    },
+  },
+  plugins: [],
+};

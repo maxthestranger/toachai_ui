@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Circular Regular';
+  src: url('/fonts/CircularXXWeb-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Circular Medium';
+  src: url('/fonts/CircularXXWeb-Medium.woff');
+}
+
+@font-face {
+  font-family: 'Circular Bold';
+  src: url('/fonts/CircularXXWeb-Bold.woff');
+}
+
+@font-face {
+  font-family: 'Circular Book';
+  src: url('/fonts/CircularXXWeb-Book.woff');
+}
+
+@font-face {
+  font-family: 'Circular Black';
+  src: url('/fonts/CircularXXWeb-Black.woff');
+}
+
+:root {
+  --tw-ring-offset-width: 0;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 2.65546px 95px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  line-height: 1.5;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+}
+
+/* custom utility classes */
+.public-page-wrap {
+  min-height: calc(100vh - 237px);
+}
+
+.shadow-x-sm {
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.btn-hover-bg:before {
+  content: '';
+  transform: scale(0.7) perspective(1px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: all 0.2s ease;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.btn-hover-bg.active:before,
+.btn-hover-bg:hover:before {
+  transform: scale(1.035) perspective(1px);
+  opacity: 1;
+}
+
+.btn-with-bg-green:before {
+  --tw-bg-opacity: 1;
+  background-color: rgba(47, 197, 109, var(--tw-bg-opacity));
+}
+
+.bmc-btn:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  transition: all 0.2s ease;
+}
+
+.bmc-btn:hover:before,
+.btn-hover:hover {
+  transform: scaleX(1.021) scaleY(1.041) perspective(1px);
+}
+
+.icon-transition {
+  transition: all 0.1s ease-in-out;
+}
+
+.icon-transition:hover {
+  transform: scale(1.1);
+}
+
+.shadow-x-xsm {
+  --tw-shadow: 0 2.65546px 95px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
