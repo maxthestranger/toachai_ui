@@ -2,6 +2,7 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/screens/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -9,6 +10,7 @@ module.exports = {
         dark: '#222222',
         grey: '#777777',
         primary: '#2fc56d',
+        greyish: '#2222220d'
       },
       screens: {
         'x-xss': { max: '374px' },
@@ -19,7 +21,9 @@ module.exports = {
       },
       fontSize: {
         64: '64px',
+        32: '32px',
         30: '30px',
+        24: '24px',
         22: '22px',
         18: '18px',
         16: '16px',
@@ -28,6 +32,7 @@ module.exports = {
       },
       lineHeight: {
         80: '80px',
+        64: '64px',
         44: '44px',
         30: '30px',
       },
@@ -35,6 +40,8 @@ module.exports = {
         1128: '1128px',
         800: '800px',
         600: '600px',
+        300: '300px',
+        250: '250px'
       },
       borderRadius: {
         40: '40px',
@@ -52,7 +59,12 @@ module.exports = {
       spacing: {
         192: '192px',
         120: '120px',
+        74: '74px',
+        64: '64px',
+        56: '56px',
+        48: '48px',
         36: '36px',
+        32: '32px',
         24: '24px',
         16: '16px',
         14: '14px',

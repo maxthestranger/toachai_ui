@@ -35,12 +35,12 @@ export default function Header() {
         <div className="flex">
           <div className="xss:flex hidden">
             <Link href="/faq">
-              <a className="btn-hover-bg relative text-dark flex items-center text-16 font-cr-medium inline-block px-16 py-8 mx-4 xs:px-12 xs:py-2 xs:mx-2 xs:text-14 x-xss:px-8 xxs:mx-0 x-xss:text-12">
+              <a className="btn-hover-bg relative text-dark flex items-center text-16 font-cr-medium px-16 py-8 mx-4 xs:px-12 xs:py-2 xs:mx-2 xs:text-14 x-xss:px-8 xss:mx-0 x-xss:text-12">
                 <span>FAQ</span>
               </a>
             </Link>
             <Link href="/explore_creators">
-              <a className="btn-hover-bg relative text-dark flex items-center text-16 font-cr-medium inline-block px-16 py-8 mx-4 xs:px-12 xs:py-2 xs:mx-2 xs:text-14 x-xss:px-8 xxs:mx-0 x-xss:text-12">
+              <a className="btn-hover-bg relative text-dark flex items-center text-16 font-cr-medium px-16 py-8 mx-4 xs:px-12 xs:py-2 xs:mx-2 xs:text-14 x-xss:px-8 xxs:mx-0 x-xss:text-12">
                 <span>
                   Explore
                   <span className="xss:hidden">creators</span>
@@ -49,12 +49,12 @@ export default function Header() {
             </Link>
           </div>
           <Link href="/faq">
-            <a className="btn-hover-bg relative text-dark flex items-center text-16 font-cr-medium px-16 py-8 mx-4 xs:text-14 xxs:px-8">
+            <a className="btn-hover-bg relative text-dark flex items-center text-16 font-cr-medium px-16 py-8 mx-4 xs:text-14 xss:px-8">
               Login
             </a>
           </Link>
           <Link href="/faq">
-            <a className="bmc-btn btn-with-bg-green relative text-white flex items-center text-16 font-cr-medium px-16 py-8 mx-4 xxs:mx-0 xs:text-14">
+            <a className="bmc-btn btn-with-bg-green relative text-white flex items-center text-16 font-cr-medium px-16 py-8 mx-4 xss:mx-0 xs:text-14">
               <span className="z-1">Sign Up</span>
             </a>
           </Link>

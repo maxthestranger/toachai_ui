@@ -1,3 +1,5 @@
+import NameInput from '../components/nameInput/nameInput'
+
 export default function Hero() {
   return (
     <div className="xs:px-24">
@@ -12,6 +14,9 @@ export default function Hero() {
           </p>
         </div>
       </div>
+
+      <NameInput />
+        <div className="mt-16 text-16 font-cr-book text-dark text-center">It’s free, and takes less than a minute.</div>
     </div>
   );
 }

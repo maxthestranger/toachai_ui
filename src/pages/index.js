@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Hero from '../screens/hero';
 import Layout from '../screens/layout';
+import MoreInfo from "../screens/moreInfo";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Hero />
+          <MoreInfo />
       </Layout>
     </>
   );
